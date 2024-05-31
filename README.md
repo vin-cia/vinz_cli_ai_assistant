@@ -87,20 +87,23 @@ Set your OpenAI API key as an environment variable:
    softwareupdate -l
    ```
 
-## Specify a MODEL
+## Specify a MODEL, INSTALL, UNINSTALL
 
-At the moment, Vinz CLI AI-Assistant is using OpenAI API to operate. You can only change the default model (gpt-3.5-turbo) by using the proper argument (--model):
+At the moment, Vinz CLI AI-Assistant is using OpenAI API to operate. You can only change the default model (gpt-3.5-turbo) by using the proper argument (--model). Or you can install the CLI Assistant as a shell command and invoke it easily by running "v" from your command line. Use the (--install) or (--uninstall) flags.
 
    ```sh
    python3 vinz_cli_ai_assistant.py --help
 
-   usage: vinz_cli_ai_assistant.py [-h] [--model MODEL]
+   usage: vinz_cli_ai_assistant.py [-h] [--model MODEL] [--install] [--uninstall]
 
    Run the Vinz CLI AI-Assistant (VCAA).
 
    optional arguments:
-     -h, --help     show this help message and exit
-     --model MODEL  The model to use for OpenAI API.
+      -h, --help     show this help message and exit
+      --model MODEL  The model to use for OpenAI API.
+      --install      Install the script to /usr/local/bin.
+      --uninstall    Uninstall the script from /usr/local/bin and clean up related files.
+
    ```
 
 ## CREDITS

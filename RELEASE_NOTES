@@ -1,0 +1,70 @@
+Release Notes
+Version 1.1.0
+
+This release introduces several significant improvements and new features to enhance the usability and functionality
+of the Vinz CLI AI-Assistant. Below are the detailed changes:
+
+### New Features
+
+    Installation and Uninstallation Commands
+        Added a --install argument to allow users to install the script as a normal shell command.
+        Added a --uninstall argument to enable users to uninstall the script and clean up related files.
+        The script can now be installed to /usr/local/bin and executed with the command v.
+
+    Answers only to pertinent questions
+        The tool "should" now provide answers only if they are related to Unix commands and Shell scripting.
+
+    Shebang Line
+        Included a shebang line (#!/usr/bin/env python3) to ensure the script uses the appropriate Python interpreter
+        found in the user's environment.
+
+    Environment Variable Check
+        The script now checks for the OPENAI_API_KEY environment variable only when necessary, allowing installation
+        and uninstallation to proceed without requiring the API key.
+
+### Improvements
+
+    User Interface Enhancements
+        Updated the welcome message to reflect the new command name "v" instead of "vcaa".
+        Improved logging and error messages to guide users through installation and uninstallation processes.
+
+    Script Permissions
+        The script is made executable during the installation process to allow for seamless execution as a command.
+
+### Bug Fixes
+
+    Permission Handling
+        Fixed permission-related issues by suggesting the use of sudo when necessary during installation and uninstallation.
+
+    Robust Error Handling
+        Enhanced error handling to provide more informative messages for API errors, rate limits, and unexpected issues.
+
+USAGE INSTRUCTIONS
+
+### Install the Script
+
+To install the script and make it executable as the command v, run the following command:
+
+* sudo python3 vinz_cli_ai_assistant.py --install
+
+### Run the Script
+
+Once installed, you can run the script using the command v:
+
+* v
+
+### Uninstall the Script
+
+To uninstall the script and clean up related files, run:
+
+* sudo python3 vinz_cli_ai_assistant.py --uninstall
+
+### Known Issues
+
+    None at this time.
+
+### Conclusion
+
+    These updates improve the ease of use and flexibility of the Vinz CLI AI-Assistant.
+    Users can now install and uninstall the script with simple commands and execute it seamlessly.
+    I welcome feedback and contributions to continue improving the tool.
